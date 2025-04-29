@@ -1,0 +1,13 @@
+FROM python:3.9-slim
+
+# Installiere Abhängigkeiten
+RUN pip install paho-mqtt requests
+
+# Kopiere das Python-Skript in den Container
+COPY main.py /app/main.py
+
+# Setze den Arbeitsordner
+WORKDIR /app
+
+# Führe das Python-Skript aus
+CMD ["python", "main.py"]

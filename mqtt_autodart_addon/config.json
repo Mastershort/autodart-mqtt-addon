@@ -1,0 +1,19 @@
+{
+    "name": "Autodart MQTT Addon",
+    "version": "1.0",
+    "slug": "autodart_mqtt",
+    "description": "Holt API-Daten von Autodart und sendet sie via MQTT.",
+    "startup": "application",
+    "boot": "auto",
+    "options": {
+      "api_url": "http://192.168.50.109:3180/api/state",
+      "mqtt_broker": "mqtt://localhost",
+      "mqtt_topic": "autodart/status"
+    },
+    "schema": {
+      "api_url": "str",
+      "mqtt_broker": "str",
+      "mqtt_topic": "str"
+    }
+  }
+  
