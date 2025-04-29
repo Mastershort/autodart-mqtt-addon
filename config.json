@@ -1,0 +1,6 @@
+{
+    "api_ip": "192.168.50.233:3180",
+    "broker": "192.168.50.11",
+    "topic": "autodart/data",
+    "interval": 5
+}
